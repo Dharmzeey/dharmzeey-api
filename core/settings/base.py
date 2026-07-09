@@ -9,9 +9,9 @@ load_dotenv()
 # BASE_DIR is the api/ folder (three levels up from this file)
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "change-me-in-production")
+SECRET_KEY = os.getenv("SECRET_KEY", "change-me-in-production")
 
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "localhost,127.0.0.1").split(",")
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1").split(",")
 
 # ---------------------------------------------------------------------------
 # Apps
@@ -28,10 +28,10 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "corsheaders",
     # Local
-    "blog",
-    "projects",
-    "skills",
-    "site_content",
+    "blog.apps.BlogConfig",
+    "projects.apps.ProjectsConfig",
+    "skills.apps.SkillsConfig",
+    "site_content.apps.SiteContentConfig",
 ]
 
 # ---------------------------------------------------------------------------
