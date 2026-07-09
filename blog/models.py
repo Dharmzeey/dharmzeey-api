@@ -20,7 +20,7 @@ class BlogPost(models.Model):
     slug = models.SlugField(max_length=255, unique=True, db_index=True)
     content = models.TextField(help_text="Rich HTML — code snippets, images, video embeds.")
     excerpt = models.TextField(max_length=500, blank=True, help_text="Short summary for list pages and SEO.")
-    featured_image = models.URLField(blank=True, help_text="Backblaze / S3 URL for the hero image.")
+    featured_image = models.ImageField(upload_to="blog/", blank=True, null=True, help_text="Hero image — uploaded to media storage (B2 in production).")
     featured_image_alt = models.CharField(max_length=255, blank=True)
     tags = models.ManyToManyField(Tag, blank=True, related_name="posts")
     published_date = models.DateTimeField(db_index=True)

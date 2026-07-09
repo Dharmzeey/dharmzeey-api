@@ -91,6 +91,9 @@ USE_TZ = True
 STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+
 # Backblaze B2 (S3-compatible) — used for blog images & project screenshots
 AWS_ACCESS_KEY_ID = os.getenv("B2_KEY_ID", "")
 AWS_SECRET_ACCESS_KEY = os.getenv("B2_APP_KEY", "")

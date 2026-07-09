@@ -8,7 +8,7 @@ class Project(models.Model):
     category = models.CharField(max_length=255, help_text="e.g. 'E-commerce · Gadget Store'")
     intro = models.TextField(help_text="Short tagline / description.")
     summary = models.TextField(blank=True, help_text="Longer description for SEO meta.")
-    image = models.CharField(max_length=500, blank=True, help_text="Backblaze / S3 URL or relative path (/images/...) for project screenshot.")
+    image = models.ImageField(upload_to="projects/", blank=True, null=True, help_text="Project screenshot — uploaded to media storage (B2 in production).")
     url = models.URLField(blank=True, help_text="Live project URL.")
     github = models.URLField(blank=True, help_text="GitHub repo URL.")
     github_api = models.URLField(blank=True, help_text="API repo URL (optional).")

@@ -53,7 +53,7 @@ class BlogPostDeleteView(generics.DestroyAPIView):
 def recent_posts(request):
     """Return the 4 most recent published posts (for homepage Writing section)."""
     posts = BlogPost.objects.filter(is_published=True).prefetch_related("tags")[:4]
-    serializer = BlogPostListSerializer(posts, many=True)
+    serializer = BlogPostListSerializer(posts, many=True, context={"request": request})
     return Response(serializer.data)
 
 
@@ -66,7 +66,7 @@ def related_posts(request, slug):
         .exclude(slug=slug)
         .prefetch_related("tags")[:3]
     )
-    serializer = BlogPostListSerializer(posts, many=True)
+    serializer = BlogPostListSerializer(posts, many=True, context={"request": request})
     return Response(serializer.data)
 
 

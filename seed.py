@@ -48,7 +48,6 @@ def seed_projects():
                 "category": fm.get("category", ""),
                 "intro": fm.get("intro", ""),
                 "summary": fm.get("summary", ""),
-                "image": fm.get("image", ""),
                 "url": fm.get("url", ""),
                 "github": fm.get("github", ""),
                 "github_api": fm.get("github_api", ""),
