@@ -28,8 +28,8 @@ EXCERPT = (
 META_TITLE = "Serve Media via a Custom Subdomain with Backblaze B2 + Cloudflare"
 META_DESCRIPTION = (
     "Step-by-step guide to serving Backblaze B2 files from your own subdomain "
-    "with Cloudflare: CNAME setup, the critical URL rewrite rule, and Django "
-    "and Next.js config."
+    "with Cloudflare: CNAME setup, the URL rewrite rule, and Django "
+    "and Next.js."
 )
 
 TAGS = ["Backblaze B2", "Cloudflare", "DevOps", "Django", "CDN"]

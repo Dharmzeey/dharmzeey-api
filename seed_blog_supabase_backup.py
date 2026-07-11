@@ -26,9 +26,9 @@ EXCERPT = (
 
 META_TITLE = "Fixing Silent Supabase Backup Failures in GitHub Actions"
 META_DESCRIPTION = (
-    "A pg_dump version mismatch and an IPv6 gotcha broke my daily Supabase "
-    "backups for months. How I fixed both, with a working GitHub Actions to "
-    "Backblaze B2 workflow."
+    "A pg_dump version mismatch and an IPv6 gotcha broke my Supabase backups "
+    "for months. How I fixed both, with a working GitHub Actions to Backblaze "
+    "B2 workflow."
 )
 
 TAGS = ["Supabase", "GitHub Actions", "PostgreSQL", "Backblaze B2", "DevOps"]

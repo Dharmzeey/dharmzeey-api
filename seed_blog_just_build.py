@@ -28,8 +28,8 @@ EXCERPT = (
 META_TITLE = "Stop Waiting for Validation — Just Build"
 META_DESCRIPTION = (
     "Idea validation is good, but execution is better. Why developers should "
-    "build the core, ship it early, and iterate — instead of waiting for "
-    "surveys and perfect prototypes."
+    "build the core, ship early, and iterate instead of waiting for perfect "
+    "validation."
 )
 
 TAGS = ["Career", "Indie Hacking", "Product", "Software Development"]
