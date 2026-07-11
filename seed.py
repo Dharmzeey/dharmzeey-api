@@ -15,7 +15,7 @@ django.setup()
 from projects.models import Project  # noqa: E402
 from skills.models import Skill, SkillCategory  # noqa: E402
 
-MD_DIR = Path(__file__).resolve().parent.parent / "frontend" / "src" / "updates" / "completed"
+MD_DIR = Path(__file__).resolve().parent / "seed_data" / "completed"
 
 
 def parse_frontmatter(text):
